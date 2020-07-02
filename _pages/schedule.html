@@ -1,0 +1,261 @@
+---
+layout: single
+type: page
+permalink: /schedule
+title: Schedule
+sidebar:
+  nav: "schedule"
+---
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<style>
+  table.customtable {
+    border: 2px solid #000000;
+    /*background-color: #B4B4B4;*/
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    border-collapse: collapse;
+    display: table;
+  }
+  table.customtable td, table.customtable th {
+    border: 1px solid #4A4A4A;
+    padding: 3px 2px;
+  }
+  table.customtable tr:nth-child(even) {
+    background: #EBEBEB;
+  }
+  table.customtable thead {
+    background: #000000;
+    border-bottom: 3px solid #000000;
+  }
+  table.customtable thead th {
+    color: #E6E6E6;
+    text-align: center;
+    /*border-left: 2px solid #4A4A4A;*/
+  }
+  table.customtable tbody td a {
+    text-decoration: underline;
+  }
+  dialog.abstractdlg {
+    width: 66%;
+  }
+  #dlg_content {
+      font-size: 0.6em;
+  }
+  pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+</style>
+
+<div id="dialog" title="Abstract" width="66%">
+  <p id="dlg_content"></p>
+</div>
+
+<h1 style="text-align:center;white-space:pre-wrap;" id="tuesday"><strong>Tuesday 22 Oct</strong></h1>
+
+<table class="customtable">
+  <thead>
+    <tr>
+      <th width="15%">Time</th>
+      <th>Presentation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>09:00-09:40</td>
+      <td>Registration/Coffee</td>
+    </tr>
+    <tr>
+      <td>09:40-10:00</td>
+      <td>Welcome from the FAUCET Foundation.<br>
+      Dr Richard Nelson - FAUCET Foundation / WAND Network
+      Research Group @ University of Waikato</td>
+    </tr>
+    <tr>
+      <td>10:00-10:30</td>
+      <td id="t1" abstract="Given prior successes at SC18, a group at Sandia transitioned a small lab from using traditional switching and routing to near-100% OpenFlow 1.3 architecture using FAUCET. This talk discusses our use case, goals, and our journey from operating a traditional network to managing a multivendor SDN environment with FAUCET. SNL is managed and operated by NTESS under DOE NNSA contract DE-NA0003525.">
+        <a href="javascript:;" onclick="showAbstract('t1')">FAUCET at Sandia National Laboratories: Multivendor
+        FAUCET Implementation for Cloud Development.</a><br>
+        Tim Toole - Sandia National Laboratories<br>
+        [<a href="assets/files/Timothy+Toole+-+FAUCET+at+Sandia+National+Laboratories.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=NxOuOH6efDY">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>10:30-11:00</td>
+      <td>Morning break.</td>
+    </tr>
+    <tr>
+      <td>11:00-11:30</td>
+      <td id="t2" abstract="One of the key benefits of using SDN technology is being able to make programmatic changes to the network without having to log into a number of network hardware devices. This talk will demonstrate and show the key components of Faucet SDN controller which enables automated configuration changes on your network.  These changes are based on the observed behavior of the network, and Faucet provides a simple and reliable means to do this in production settings. By leveraging the &quot;event socket&quot; and &quot;config stat reload&quot; features of Faucet, safely applying ACL changes rapidly and repeatedly becomes the new norm, opening up new and exciting possibilities in network security.
+
+Background: Two years ago I discovered Faucet after coming across Northbound Networks when looking for a small portable SDN switch. Since that time I've added first class support for Faucet into Poseidon (an open source project I actively maintain that uses SDN and machine learning to better understand what is on someone's network and what those devices are doing). I've deployed Faucet in concert with Poseidon on the production networks at 4 different medium-sized events, helped my team deploy Faucet in production for one of our offices, and most recently I've converted my home network to use and rely on Faucet. This talk and demonstration will walk through the lessons learned along the way and enhancements to Faucet that helped make these deployments possible.">
+      <a href="javascript:;" onclick="showAbstract('t2');">Making Thousands of Automated Configuration Changes at Home and in Production with FAUCET and Friends.</a><br>
+      Charlie Lewis - IQT Labs<br>
+      [<a href="https://www.youtube.com/watch?v=senm6XJtPAU">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>11:30-12:00</td>
+      <td id="t3" abstract="Not all threats come from outside of your network. In fact some of the most insidious threats exist inside your network and are harder to differentiate because they are expected to be there. Additionally, the appropriate reaction can be difficult to gauge. This talk and demonstration will present a way to use automation with Faucet and Poseidon to identify and respond to potential insider threats in a nuanced way.
+
+Background: Insider threats are hard to spot, particularly in early stages. On top of that, different types of resources merit different types of responses. Absolutely, there are certain types of resources that merit a hard block and a swift visit from the security team, but many other things probably don't require that level of stricture. Additionally, a hard block or denial can serve as a signal to a threat. For certain use cases it may make more sense to apply increased scrutiny to a user or set of users in order to identify a pattern of behavior or to infer an objective. Poseidon is being augmented to utilize network sensor output to enable a Faucet based network to reconfigure itself in response to unauthorized access of protected resources. This demo will focus on one possible configuration and a set of scenarios where quarantining or monitoring are used as a response instead of blocking.">
+      <a href="javascript:;" onclick="showAbstract('t3')">Finding Aram Fingal: Using Poseidon and Faucet to Identify and Monitor Insider Threats.</a><br>
+      Ryan Ashley - IQT Labs<br>
+      [<a href="assets/files/Ryan+Ashley+-+Finding+Aram+Fingal%3A+Using+Poseidon+and+Faucet+to+Identify+and+Monitor+Insider+Threats.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=0Hl6yOR_2WU">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>12:00-13:00</td>
+      <td>Lunch</td>
+    </tr>
+    <tr>
+      <td>13:00-13:30</td>
+      <td id="t4" abstract="This presentation will explore the use of OpenFlow and Faucet to solve a fundamental problem for fixed wireless ISPs (WISPs) that has existed since their inception. In RF networking, utilizing all available bandwidth over a given link is a significant challenge. The connections from a radio to a router or switch utilize standardized ethernet speeds such as 1 or 10 Gbps. However the throughput over a pair of radios is variable and dependent on atmospheric conditions, RF interference, and weather. As such, normal ISP traffic engineering and optimization methods are less effective due to the elastic nature of bandwidth available on any given path.
+Software Defined Networking and more specifically OpenFlow with Faucet has the ability to solve this unique problem. By measuring available bandwidth and using the Faucet controller, we can begin to shift traffic around the network to ensure that unused paths become active paths when needed and to enable steering of traffic around problem areas when speeds are degraded due to RF conditions. Our first tests will occur in a lab environment with Northbound Networks Zodiac FX platform. After the desired traffic engineering is achieved using the Faucet controller, the tests will move to an experimental portion of an operational WISP network to analyze the effectiveness of Faucet in a production network running on commercial RF towers">
+      <a href="javascript:;" onclick="showAbstract('t4')">SDN Traffic Engineering for Wireless ISPs</a><br>
+      Kevin Myers and Sajan Parikh - IP ArchiTechs<br>
+      [<a href="assets/files/Kevin+Myers+%26+Sajan+Parikh+-+SDN+Traffic+Engineering+for+Wireless+ISPs.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=HyFXpEJdkNI">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>13:30-14:00</td>
+      <td id="t5" abstract="Presentation will explore the challenges faced in supporting FAUCET pipeline in Arista switches and hopefully serve as a template for other switch vendors. We will conclude with current state of FAUCET support in Arista switches.">
+      <a href="javascript:;" onclick="showAbstract('t5')">Stages in FAUCET switch dev-cycle</a><br>
+      Nitin Karkhanis - Arista Networks<br>
+      [<a href="assets/files/Nitin+Karkhanis+-+Stages+in+FAUCET+switch+dev+cycle.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=xi50ZYubaoQ">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>14:00-14:30</td>
+      <td>Afternoon break</td>
+    </tr>
+    <tr>
+      <td>14:30-15:00</td>
+      <td id="t100" abstract="DAQ is an open-source framework that's designed to improve the compliance, security, and functionality of IoT devices using automated testing. By applying test-driven development to the entire IoT device product lifecycle, errors can be detected sooner, more accurately, and more quickly than with the manual testing process. DAQ is layered on the Faucet SDN network controller, allowing it to simultaneously test many devices at the same time, across a number of different environments.">
+      <a href="javascript:;" onclick="showAbstract('t100')">Taming the IoT: Operationalized Testing to Secure Connected Devices</a><br>
+      Trevor Pering - Google<br>
+      [<a href="assets/files/Trevor+Pering+-+Taming+the+IoT%3A+Operationalized+Testing+to+Secure+Connected+Devices.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=hb5pCdrUOFg">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>15:00-15:30</td>
+      <td id="t101" abstract="Networks for IoT and Building Management Systems have different challenges than Enterprise networks due to non-standard behavior of the devices and security concerns. 
+Faucet based network supports granular security rules, automation of configuration , fast deployment cycles, traffic analysis and allows visibility into traffic patterns.
+Faucet SDN controller provides a flexible way to build networks with non-standard requirements and optimize network behavior for it.">
+      <a href="javascript:;" onclick="showAbstract('t101')">Network for IoT Powered by Faucet</a><br>
+      Nataliia Sytai - Google<br>
+      [<a href="assets/files/Nataliia+Sytai+-+Network+for+IoT+Powered+by+Faucet.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=ybsdfXZyIiM">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>15:30-16:30</td>
+      <td>Panel: Vendor's/Dev's/Operator's use cases</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 style="text-align:center;white-space:pre-wrap;" id="wednesday"><strong>Wednesday 23 Oct</strong> </h1>
+
+<table class="customtable">
+  <thead>
+    <tr>
+      <th width="15%">Time</th>
+      <th>Presentation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>09:00-09:40</td>
+      <td>Coffee</td>
+    </tr>
+    <tr>
+      <td>09:40-10:30</td>
+      <td>Panel: Developers, the future of FAUCET/how to operate
+      FAUCET</td>
+    </tr>
+    <tr>
+      <td>10:30-11:00</td>
+      <td>Morning break</td>
+    </tr>
+    <tr>
+      <td>11:00-11:30</td>
+      <td id="t6" abstract="Faucet has two primary modes of operation: independent switching and distributed switching. Most users right now will use the independent mode where each decision about the network is made in the context of each individual switch. Faucet has a new mode of switching we've been working on the past 2 years that allows decisions such as switching and routing to be made in the context of the whole network. This has great benefits for building resilient networks that can automatically recover from switch and port/cable failures. In this talk we will cover some of the new features and demonstrate how they work.">
+      <a href="javascript:;" onclick="showAbstract('t6')">FAUCET distributed switching: The whole is greater than the sum of its parts</a><br>
+      Brad Cowie - WAND - The University of Waikato<br>
+      [<a href="assets/files/Brad+Cowie+-+FAUCET+distributed+switching%3A+The+whole+is+greater+than+the+sum+of+its+parts.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=q6QE4wHxirg">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>11:30-12:00</td>
+      <td id="t7" abstract="With the addition of Faucet’s 802.1x Module, Chewie, there is now the ability to enforce port-based access control over a faucet-controlled network. This talk will cover the benefits of deploying a Chewie instance on a Faucet network and how to achieve setting up 802.1x in an already functioning network. We will briefly discuss common issues that will need to be considered when looking at deploying 802.1x and will have a demo of connecting to a locked-down network using wpa_supplicant.">
+      <a href="javascript:;" onclick="showAbstract('t7')">A FAUCET-driven Network Access Control Solution</a><br>
+      Michael Washer - WAND - The University of Waikato<br>
+      [<a href="assets/files/Michael+Washer+-+A+FAUCET+driven+Network+Access+Control+Solution.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=lusbAfS5png">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>12:00-13:00</td>
+      <td>Lunch</td>
+    </tr>
+    <tr>
+      <td>13:00-13:30</td>
+      <td id="t8" abstract="We describe our experience of developing Faucet OpenFlow on the Cisco Catalyst 9K family of switches with the UADP ASIC. In order to support dynamic pipelines using the Table Feature Message, we explore how the pipeline control software could be restructured to treat each forwarding element as a programmable entity. This not only creates a programming abstraction for the pipeline but also provides the capability to modify the properties of forwarding elements in order to use hardware resources such as pipeline stages, TCAMs and Hash Tables more efficiently to maximize scale and performance without compromising functionality.
+Despite the flexibility of the OpenFlow pipeline, there are use cases that required hybrid behaviors, i.e., features beyond the capabilities of OpenFlow. We describe a framework to enable such behaviors with examples from LLDP-MED, MacSec with MKA and how to solve the bootstrap problem of enabling connections to the control plane network on OpenFlow interfaces.">
+      <a href="javascript:;" onclick="showAbstract('t8')">OpenFlow and beyond on the Cisco Catalyst 9000</a><br>
+      Atri Indiresan - Cisco Systems<br>
+      [<a href="assets/files/Atri+Indiresan+-+OpenFlow+and+beyond+on+the+Cisco+Catalyst+9000.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=3vtkRNfHiL0">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>13:30-14:00</td>
+      <td id="t9" abstract='IXPs are central elements of the Internet ecosystem. IXPs carry substantial traffic volumes and interconnect a multitude of networks of different. As any other networks operators. IXP operators are looking at the best trade-off between best automation, performance, and scalability.
+We propose to change drastically the way IXP Ops will design and manage their networks. Our approach applies the best practice provisioning, followed by a Zero-Touch "Drag and Drop" network planning and design.
+We decided to enhance IXP-Manager with the Umbrella OpenFlow architecture supported by the FAUCET controller.
+IXP Manager is a complete Open Source management system for IXPs, which includes an administration and customer portal; provides end to end provisioning; and both teaches and implements best practice.
+Umbrella is OpenFlow switching fabric architecture explicitly developed for IXPs. Umbrella has been deployed in 2015 and operating since then at Toulouse IXP and in recently at Osaka NSP-IXP3. Umbrella leverages SDN programmability to tackle in the data plane part of the control traffic, removing the actual MAC learning mechanism in legacy IXP networks. Umbrella also uses a Layer-2 encoded path to minimize resource consumption, management cost, and extend scalability.
+This approach dramatically simplifies the management of the fabric.
+Operators are provisioning and representing their full architecture through a visual diagram editor before testing and push in production any change. All this method is without touching the any Command Line Interface.'>
+      <a href="javascript:;" onclick="showAbstract('t9')">From diagramming to push on green for IXP</a><br>
+      Marc Bruyere - Internet Initiative, Japan Institue of
+      Innovation<br>
+      [<a href="assets/files/Marc+Bruyere+-+From+diagramming+to+push+on+green+for+IXP.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=usGf8PfPUuw">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>14:00-14:30</td>
+      <td>Afternoon break</td>
+    </tr>
+    <tr>
+      <td>14:30-15:00</td>
+      <td id="t10" abstract="Faucet takes powerful, intelligent hardware and make it stupid and inflexible. This talk will explain why that’s a good idea. I will talk about the benefits for operations including diagnosing faults and testing.">
+      <a href="javascript:;" onclick="showAbstract('t10')">The Killer App: Why you should deploy FAUCET</a><br>
+      Chris Lorier - REANNZ<br>
+      [<a href="assets/files/Chris+Lorier+-+The+Killer+App%3A+Why+you+should+deploy+FAUCET.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=Yyu2MtfKmtQ">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>15:00-15:30</td>
+      <td id="t11" abstract="Faucet has really made deploying production quality controller for a SDN network easy.  Still, a production deployment by IT involves constant upkeep in terms of upgrading containers and dashboards as such.
+Service Fractal SaaS platform has been focussed on helping IT deploy and manage enterprise networks based on real-time data insights.  A core part of the infrastructure is Faucet, which is used as a standardized south bound to communicate with network switches in a vendor-neutral way.
+This talk is focussed on sharing details about challenges we encountered in deploying and managing on-premise networks from cloud.  These include topics such as Openflow mode, DNS, provisioning keys, and interfaces - mostly things that switch vendors can do to increase provisioning and deployment efficiency.">
+      <a href="javascript:;" onclick="showAbstract('t11')">Challenges in managing on-prem switches from cloud</a><br>
+      Shivaram Mysore and Mark Hapner - Service Fractal Inc<br>
+      [<a href="assets/files/Shivaram+Mysore+-+Challenges+in+managing+on+prem+switches+from+cloud.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=S4bZlfH6Lw0">Video</a>]
+      </td>
+    </tr>
+    <tr>
+      <td>15:30-16:30</td>
+      <td>Lightning talks<br>
+        <ul>
+          <li>Running FAUCET in an Enterprise network - Rahul Gupta and Shota Nakamura - Allied Telesis [<a href="assets/files/Rahul+Gupta+%26+Shota+Nakamura+-+Running+FAUCET+in+an+Enterprise+network.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=4NrkjEVb1hs">Video</a>]</li>
+          <li>faucetagent.py: a very simple gNMI agent for configuring FAUCET - Bob Lantz [<a href="assets/files/Bob+Lantz+-+faucetagent.py%3A+a+very+simple+gNMI+agent+for+configuring+FAUCET.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=LHUHzY9nATE">Video</a>]</li>
+          <li>Efficient Inter-VLAN Routing in OpenFlow Networks - Atri Indiresan - Cisco [<a href="assets/files/Atri+Indiresan+-+Efficient+Inter+VLAN+Routing+in+OpenFlow+Networks.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=jw8oFziJxg8">Video</a>]</li>
+          <li>FAUCET SDN on Kubernetes in the cloud - Simeon Miteff [<a href="assets/files/Simeon+Miteff+-+FAUCET+on+Kubernetes+in+the+cloud.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=iXybZoad6LI">Video</a>]</li>
+      </td>
+    </tr>
+  </tbody>
+</table>

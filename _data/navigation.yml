@@ -1,0 +1,23 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "CFP"
+    url: "/cfp"
+  - title: "Location"
+    url: "/location"
+  - title: "Schedule"
+    url: "/schedule"
+  - title: "PlugFest"
+    url: "/plugfest"
+  - title: "Accommodation"
+    url: "/accommodation"
+  - title: "Past Events"
+    url: "/past-events"
+
+schedule:
+  - title: Conference Days
+    children:
+      - title: "Tuesday 22 Oct"
+        url: "schedule#tuesday"
+      - title: "Wednesday 23 Oct"
+        url: "schedule#wednesday"
