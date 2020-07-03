@@ -9,4 +9,5 @@ header:
   overlay_image: /assets/images/hero.jpg
 ---
 
-* [FAUCETCon 2017](http://2017.conference.faucet.nz/)
+* [FAUCETCon 2017](https://2017.conference.faucet.nz/)
+* [Faucet Workshop Tokyo](https://workshop.faucet.nz/)
