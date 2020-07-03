@@ -3,6 +3,10 @@ layout: single
 type: page
 permalink: /plugfest
 title: PlugFest
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/hero.jpg
 ---
 
 The Faucet PlugFest is being held on Monday 21st October, at the same venue as the Faucet conference.

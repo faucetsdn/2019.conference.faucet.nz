@@ -3,6 +3,10 @@ layout: single
 type: page
 permalink: /accommodation
 title: Accommodation options
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/hero.jpg
 ---
 
   1. Sheraton Sunnyvale Hotel  -  Marriott , 2 min walk, relatively expensive.
