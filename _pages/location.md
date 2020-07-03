@@ -9,11 +9,12 @@ header:
   overlay_image: /assets/images/hero.jpg
 ---
 
-## Google's offices in Sunnyvale, CA, USA
+# Google's offices in Sunnyvale, CA, USA
 
 We are pleased to be hosted by Google for the conference and plugfest:
 
    *Google Building MP5, Room: SVL-MP5-2-Hot Air Balloon*
+
    *1160 North Mathilda Avenue, Sunnyvale, CA, 94089*
 
 ## Parking
